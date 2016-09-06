@@ -1,0 +1,6 @@
+---
+- name: Install latest stable Ruby via Homebrew
+  package:
+    name: ruby
+    state: latest
+  when: ansible_os_family == "Darwin"
